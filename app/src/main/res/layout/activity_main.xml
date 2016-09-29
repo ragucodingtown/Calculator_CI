@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context="com.example.codingtown.calculator_ci.MainActivity"
+    android:background="@drawable/a">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="COMPOUND INTEREST CALCULATOR"
+        android:textColor="#1c1ff4"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/textView" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AMOUNT"
+            android:id="@+id/textView2"
+            android:textStyle="bold"
+            android:textColor="#1c1ff4" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv1"
+            android:textColor="#ffffff"
+            android:inputType="numberDecimal"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INTEREST"
+            android:id="@+id/textView3"
+            android:textStyle="bold"
+            android:textColor="#1c1ff4" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:id="@+id/tv2"
+            android:inputType="numberDecimal"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.04"
+            android:weightSum="1">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 MONTH"
+                android:id="@+id/one"
+                android:textColor="#1c1ff4"
+                android:textStyle="bold"
+                android:background="#a9fca0"
+                android:layout_weight="0.31" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.10" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
+                android:text="3 MONTH"
+                android:id="@+id/three"
+                android:background="#a9fca0"
+                android:textStyle="bold"
+                android:textColor="#1c1ff4" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.10" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6 MONTH"
+                android:textStyle="bold"
+                android:id="@+id/six"
+                android:background="#a9fca0"
+                android:textColor="#1c1ff4"
+                android:layout_weight="0.51" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YEAR"
+            android:id="@+id/textView4"
+            android:textColor="#1c1ff4"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:inputType="numberDecimal"
+            android:id="@+id/tv3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/chgview"
+
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_weight="0.24" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/view1"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_weight="0.20" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.34"
+            android:weightSum="1">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CLEAR"
+                android:background="#a9fca0"
+                android:id="@+id/clr"
+                android:textStyle="bold"
+                android:textColor="#1c1ff4"
+                android:layout_weight="0.31" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.10" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AMOUNT+INTEREST"
+                android:background="#a9fca0"
+                android:id="@+id/cal"
+                android:textColor="#1c1ff4"
+                android:textStyle="bold"
+                android:layout_weight="0.20" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.10" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INTEREST"
+                android:id="@+id/intr_bt"
+                android:textColor="#1c1ff4"
+                android:background="#a9fca0"
+                android:textStyle="bold"
+                android:layout_weight="0.31" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="62dp"
+            android:layout_height="88dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/programmer"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</RelativeLayout>
